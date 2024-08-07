@@ -1,0 +1,186 @@
+/* Importing the font */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@font-face {
+  font-family: 'CrisBold';
+  src: url('fonts/cris-bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'CrisItalic';
+  src: url('fonts/cris-italic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cris';
+  src: url('fonts/cris-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cris Alt';
+  src: url('fonts/cris-alt.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Cris Medium';
+  src: url('fonts/cris-medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cris Alt Light';
+  src: url('fonts/cris-alt-light.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Cris Alt Medium';
+  src: url('fonts/cris-alt-medium.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cris Alt Thin';
+  src: url('fonts/cris-font-thin.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Cris Italic';
+  src: url('fonts/cris-italic.otf') format('truetype');
+}
+@font-face {
+  font-family: 'Cris Bolder';
+  src: url('fonts/cris-bolder.otf') format('truetype');
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: "Cris Alt", serif;
+    color: #3A0138;
+    background-color: #fff;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
+    pointer-events: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+}
+
+.header {
+  position: relative;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+strong {
+  font-family: 'Cris Medium';
+}
+
+nav, ul, li, a {
+    font-family: 'Cris';
+    font-size: 18px;
+    text-decoration: none;
+
+    color: #5C3D55;
+}
+a:visited {
+  text-decoration: none;
+  color: #5C3D55;
+}
+h1 > a{
+    color: #5C3D55;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+h1::before {
+  content: "";
+  position: absolute;
+  top: -15px; /* Adjust as needed */
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-color: #5C3D55;
+}
+
+main {
+  max-width: 1350px;
+  margin: auto;
+}
+.main-quote {
+  width: 75%;
+}
+.main-quote p {
+  font-size: 2.6rem;
+  line-height: 2.7rem;
+}
+
+.secondary-quote {
+  width: 75%;
+  margin-left: auto;
+  margin-top: 85px;
+}
+
+h2 {
+    color: #5C3D55;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #5C3D55;
+    margin-bottom: 10px;
+    font-family: 'Cris Alt Medium';
+}
+
+p {
+    font-family: 'Cris Alt Thin';
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+footer {
+    text-align: center;
+    color: #5C3D55;
+    margin-top: auto;
+}
+
+footer > p {
+  padding: 24px 0;
+  margin-top: 85px;
+
+}
+footer  a {
+  text-decoration: underline;
+  font-family: "Cris Alt Light";
+}
+
+section {
+  padding-top: calc(15vmax / 10);
+  padding-bottom: calc(15vmax / 10);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1350px;
+  margin: 0 auto;
+}
